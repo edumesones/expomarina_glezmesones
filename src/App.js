@@ -1,18 +1,22 @@
 import "./App.css";
 import NavBar from "./components/NavBar";
+import ItemListContainer from "./components/ItemListContainer";
 
 function App() {
   const title = "Titulo de Tienda";
   const data = {
     title: title,
     amount: 4,
-    greeting: "¡Saludo desde data!",
+    mensaje: "¡En un futuro incluiremos productos que podrá añadir!",
   };
   return (
     <>
       <NavBar data={data} />
+      <ItemListContainer greeting={data.mensaje} />
+
     </>
  );
 }
 
 export default App;
+

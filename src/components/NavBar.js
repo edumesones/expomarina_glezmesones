@@ -1,3 +1,6 @@
+import CartWidget from "./CartWidget";
+
+
 const NavBar = (props) => {
     console.log(props);
     return (
@@ -6,6 +9,7 @@ const NavBar = (props) => {
           <a className="navbar-brand" href="#" style={{color:"white",font:"20px"}} >
             Expomarina S.L
           </a>
+    
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
@@ -51,6 +55,9 @@ const NavBar = (props) => {
                   </li>
                 </ul>
               </li>
+              <a className="nav-link active" aria-current="page" href="#" style={{color:"white"}} outline onClick={props.handlePrevious}>
+              <CartWidget />
+              </a>
             </ul>
             <form className="d-flex">
               <input
