@@ -1,6 +1,8 @@
 import CartWidget from "./CartWidget";
 
 
+
+
 const NavBar = (props) => {
     console.log(props);
     return (
@@ -57,6 +59,7 @@ const NavBar = (props) => {
               </li>
               <a className="nav-link active" aria-current="page" href="#" style={{color:"white"}} outline onClick={props.handlePrevious}>
               <CartWidget />
+              
               </a>
             </ul>
             <form className="d-flex">
