@@ -1,7 +1,8 @@
 import "./App.css";
 import NavBar from "./components/NavBar";
 import ItemListContainer from "./components/ItemListContainer";
-import ItemCount from "./components/itemcount";
+import Promises from "./components/promise";
+import Mapeo from "./components/map";
 
 function App() {
   const title = "Titulo de Tienda";
@@ -14,7 +15,9 @@ function App() {
     <>
       <NavBar data={data} />
       <ItemListContainer greeting={data.mensaje} />
-      <ItemCount />
+      <Mapeo />
+      <Promises />
+     
 
     </>
  );
