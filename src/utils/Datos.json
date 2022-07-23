@@ -1,0 +1,12 @@
+[{
+    "id": 1,
+    "tipo": "Gasolina",
+    "precio": 2.1,
+    "stock":100
+  },
+  {
+    "id": 2,
+    "tipo": "Diesel",
+    "precio": 28,
+    "stock":150
+  }]

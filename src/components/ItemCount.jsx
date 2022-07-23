@@ -1,12 +1,12 @@
 import { useState } from "react";
 // Ponemos valores default a las props, ya que no funcionaría si nos olvidamos de enviarlas.
-const ItemCount = ({ stock = 50, initial = 0, onAdd }) => {
+const ItemCount = ({ stock = 100, initial = 0, onAdd }) => {
   const [count, setCount] = useState(initial);
   const updateCount = (op) => {
-    if (op === "eliminar" && count > 0) {
+    if (op === "-" && count > 0) {
       setCount(count - 1);
     }
-    if (op === "comprar" && count < stock) {
+    if (op === "+" && count < stock) {
       setCount(count + 1);
     }
   };
@@ -27,18 +27,28 @@ const ItemCount = ({ stock = 50, initial = 0, onAdd }) => {
           type="number"
         />
         <button
-          onClick={() => updateCount("eliminar")}
+          onClick={() => updateCount("-")}
           className="btn btn-icon btn-primary"
           type="button"
         >
-          Eliminar
+          -
         </button>
         <button
-          onClick={() => updateCount("comprar")}
+          onClick={() => updateCount("+")}
           className="btn btn-icon btn-primary"
           type="button"
         >
-          Comprar
+          +
+        </button>
+      </div>
+      <div className="d-flex justify-content-center">
+        <button
+          onClick={() => onAdd(count)}
+          type="button"
+          className="btn btn-info"
+          disabled={count === "" || count === 0}
+        >
+          Buy!
         </button>
       </div>
     </>
