@@ -7,7 +7,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 El front generado trata de simular la compra online de gasolina en una estacion de servicio en Cantabria, España
 
-# Para añadir informacion a tu repositorio en github, escribe en terminal:
+## Para añadir informacion a tu repositorio en github, escribe en terminal:
+Lo primero no olvides hacer ctrl+S para guardar todos tus archivos, una vez hayas hecho esto introduce en terminal:
 ### `git add .`
 ###  `git commit -m 'laversionquequieras' `
 ###  `git push origin master  `
