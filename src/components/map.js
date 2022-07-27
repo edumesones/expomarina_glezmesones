@@ -1,4 +1,4 @@
-import Carta from "./carta";
+import Carta from "./Carta";
 
 const Mapeo = () => {
   const users = [
