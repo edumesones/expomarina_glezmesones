@@ -1,8 +1,18 @@
 # Getting Started with Create React App
+Puedes encontrar todos mis repositorios en https://github.com/edumesones
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# En este repositorio encontraras el desarrollo de una pagina web utilizando react, javascript y CSS, asi como tecnologias asociadas
+
+El front generado trata de simular la compra online de gasolina en una estacion de servicio en Cantabria, España
+
+# Para añadir informacion a tu repositorio en github, escribe en terminal:
+### `git add .`
+###  `git commit -m 'laversionquequieras' `
+###  `git push origin master  `
+### En el caso de no encontrar el repositorio asociado , ponte en la terminal sobre la ruta de tu carpeta y escribe  `git remote -v`
+### En el caso que quieras crear un nuevo repositorio utiliza git init
 
 In the project directory, you can run:
 
